@@ -22,7 +22,17 @@
 // console.log("ьенин атым" + name)
 // console.log("my name is" + name)
 
-const name="Janyat"
-let age = 5
-let age2= 10
-console.log(age+age2)
+// const name="Janyat"
+// let age = 5
+// let age2= 10
+// console.log(age+age2)
+ 
+let pet = "cat";
+ console.log(pet );
+ 
+const birthYear = 2010;
+ console.log(Number);
+
+ var isStudent = true;
+  console.log();
+  

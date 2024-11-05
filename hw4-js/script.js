@@ -8,3 +8,19 @@ let num2 = Number (prompt ('үшінші  санды енгізіңіз:')) // 1
 var arifmetica = (num+num1+num2)/3 // жауабы 10 шығады
 
 alert('ortasha mani: ' + arifmetica) // алерт арқылы жауабы шығады
+
+
+
+ var age = 70
+ var isStudent = true
+ alert(age>=65 && isStudent == true)
+
+                         var jasy = prompt("Сан енгиз")  
+                           if(10<=jasy && jasy<=20){
+                            alert("Саныңыз дұрыс")
+                           }
+                           else{
+                                 alert("Саныңыз дұрыс емес")
+                                }
+
+                          alert(10<=jasy && jasy<=20) 

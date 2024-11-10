@@ -27,15 +27,15 @@
 
   //alert(" a * b = " + kobeitindi)
 
-          // let number1 = Number(prompt("Ввудите первое число:"));
+                      // let number1 = Number(prompt("Ввудите первое число:"));
 
-          // let num1 = Number (prompt("Сан енгізіңіз:"));
+                      // let num1 = Number (prompt("Сан енгізіңіз:"));
 
-          // let squaree = number1 * number1
+                      // let squaree = number1 * number1
 
-          // let square = num1 * num1
+                      // let square = num1 * num1
 
-          // alert("Ұзындығы" + square +'\n'+ "ені" + squaree )
+                      // alert("Ұзындығы" + square +'\n'+ "ені" + squaree )
 
 
   //  let a=10, b=10, c=5;
@@ -46,37 +46,37 @@
    
 
    
-                //   /console.log(a==b); //false
+                        //   /console.log(a==b); //false
 
-                //   console.log (a!=b);   
-                //   //!=(тең емес)
+                        //   console.log (a!=b);   
+                        //   //!=(тең емес)
 
-                //   console.log(a>b); //false
+                        //   console.log(a>b); //false
 
-                //   console.log(a<b); //false
-                  
-                //   console.log(a<=b); //true
+                        //   console.log(a<b); //false
+                          
+                        //   console.log(a<=b); //true
 
-                //   console.log(a>=b); //true
-                //     // && (және)екі жағдайда true болса true қаитарады
-                //   console.log((a>b)&&(c<a)); 
-                //     // || (немесе) екі шарттың біреуі true болса true қаитарады
-                //   console.log((a>b)||(c<a));
+                        //   console.log(a>=b); //true
+                        //     // && (және)екі жағдайда true болса true қаитарады
+                        //   console.log((a>b)&&(c<a)); 
+                        //     // || (немесе) екі шарттың біреуі true болса true қаитарады
+                        //   console.log((a>b)||(c<a));
 
-                // let age=20, hasTicket=true, isVip=false;
-                
-                // if((age>=18 && hasTicket)|| isVip){
-                //   console.log("Сізге кешке кіруге болады");
-                // }
-                // else{
-                //   console.log("Сізге кешке кіруге тиым салынады");
-                // }
+                        // let age=20, hasTicket=true, isVip=false;
+                        
+                        // if((age>=18 && hasTicket)|| isVip){
+                        //   console.log("Сізге кешке кіруге болады");
+                        // }
+                        // else{
+                        //   console.log("Сізге кешке кіруге тиым салынады");
+                        // }
 
-                // let agee = 44;
-                //   // alert(agee>=12 && agee<=45)
+                        // let agee = 44;
+                        //   // alert(agee>=12 && agee<=45)
 
-                //   let n=21
-                //   alert((n>=20) && (n<=50) && (n%2==0))  
+                        //   let n=21
+                        //   alert((n>=20) && (n<=50) && (n%2==0))  
   
   //КАЛЬКУЛЯТОР
 // var num1 = Number(prompt('Бірінші санды енгізіңіз'))
@@ -91,30 +91,32 @@
 
             
 
-              // var age = 70
-
-              // var isStudent = true
-
-              // alert(age>=65 && isStudent == true)
-
-                          //  var jasy = prompt("Сан енгиз")  
-                          //  if(10<=jasy && jasy<=20){
-                          //   alert("Саныңыз дұрыс")
-                          //  }
-                          //  else{
-                          //        alert("Саныңыз дұрыс емес")
-                          //       }
-
-                          // alert(10<=jasy && jasy<=20) 
+                          // var age = 70
+                          // var isStudent = true
+                          // alert(age>=65 && isStudent == true)
+              
    
-          // let num = prompt("сан енгізіңіз")
+   //  var jasy = prompt("Сан енгиз")  
+   //  if(10<=jasy && jasy<=20){
+   //   alert("Саныңыз дұрыс")
+   //  }
+   //  else{
+   //        alert("Саныңыз дұрыс емес")
+   //       }
 
-          // if(num % 2 == 0){
-          //   alert('сіздің жазған саныңыз ' + num + ' жұп сан')
-          // }else{
-          //   alert("сіздің жазған саныңыз " + num + ' тақ сан')
-          // }
+ // alert(10<=jasy && jasy<=20) 
+   
+                              // let num = prompt("сан енгізіңіз")
+
+                              // if(num % 2 == 0){
+                              //   alert('сіздің жазған саныңыз ' + num + ' жұп сан')
+                              // }else{
+                              //   alert("сіздің жазған саныңыз " + num + ' тақ сан')
+                              // }
+
+
   // //шарт щрындау тәсілі
+
   // let score  = +prompt("Бағаны жаз") 
   //  if(score>=90 && score <100){
   //   alert('Сіздің бағаңыз:A')
@@ -151,18 +153,85 @@
 
                           // alert('Sizdin jinagan upaiynyz ' + upai + ' bal')
 
-let surak3 = prompt("Бургер түрін жаз (Чизбургер/Гамбургер/Двайной-чизбургер)")
-let score = 0;
 
- if(surak3 == 'Чизбургер'){
-   score = 1090
+          //   // Қанша штук бургер түрі жасалуы..             
+         
+         
+         // let surak3 = prompt("Бургер түрін жаз (Чизбургер/Гамбургер/Двайной-чизбургер)")
+          // let score = 0;
+           
 
- }else if(surak3 = 'Гамбургер'){
-   score = 1190
+          // switch (surak3) {
+          //   case "Чизбургер":
+          //       var shtuk = +prompt("shtuk engiz")
+          //       score = 1090 * shtuk
+          //     break;
+           
+          //     case "Гамбургер":
+          //       var shtuk = +prompt("shtuk engiz")
+          //       score = 1190 * shtuk
+          //     break;
+              
+          //     case "Двайной-чизбургер":
+          //       var shtuk = +prompt("shtuk engiz")
+          //       score = 1490 * shtuk
+          //       break;
 
- }else if(surak3 = 'Двайной-чизбургер'){
-   score = 1490
- }
+          //   default:
+          //      alert("bundai burger turi joq")
+          
+          // }
+          // alert("chek: " +'\n'+ "Бургер түрі: " + surak3  +'\n'+ "Cуммасы: "+ score )
 
- alert("Сіздің заказыңыз қабылданды! " +'\n'+ "Бургер түрі: " + surak3  +'\n'+ "Cуммасы: "+ score )
+                        // //condichnals  
+                        
+                              
+                        // let san = prompt("сан енгіз 1 ден 3 ке дейін")
 
+                        // switch (san) {
+                        //   case "1":
+                        //     alert("сіз 1 санын енгіздіңіз")
+                        //   break;
+
+                        //     case "2":
+                        //       alert("сіз 2 санын енгіздіңіз")
+                        //     break;
+
+                        //   case "3":
+                        //     alert("сіз 3 санын енгіздіңіз")
+                        //   break;
+                            
+                        //   default:
+                        //     alert("сіз қате сан енгіздіңіз")
+                        // }
+                          
+   let susyn = prompt("Қай түрін таңдаисыз-Кофе/чай/су")  
+   let qospa; // undefined
+   switch (susyn) {
+          case "Кофе":
+             let turi = prompt("Қандай сироп таңдайсыз: карамельный/молочный")
+                switch (tury) {
+                  case "карамельный":
+                    qospa = "карамельный"
+                      break;
+                  case "молочный":
+                     qospa = "молочный"
+                    break;
+                  default:
+                    break;
+             }
+          break;
+
+    case "Чай":
+       alert("Сіз чай таңдадыңыз")
+    break;
+
+    case "су":
+       alert("Сіз су таңдадыңыз")
+    break;
+   
+    default:
+      alert("Ондай жоқ бізде")
+   }
+
+  

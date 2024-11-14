@@ -205,33 +205,116 @@
                         //     alert("сіз қате сан енгіздіңіз")
                         // }
                           
-   let susyn = prompt("Қай түрін таңдаисыз-Кофе/чай/су")  
-   let qospa; // undefined
-   switch (susyn) {
-          case "Кофе":
-             let turi = prompt("Қандай сироп таңдайсыз: карамельный/молочный")
-                switch (tury) {
-                  case "карамельный":
-                    qospa = "карамельный"
-                      break;
-                  case "молочный":
-                     qospa = "молочный"
-                    break;
-                  default:
-                    break;
-             }
-          break;
+   // let susyn = prompt("Қай түрін таңдаисыз-Кофе/чай/су")  
+   // let qospa; // undefined
+   // switch (susyn) {
+   //        case "Кофе":
+   //           let turi = prompt("Қандай сироп таңдайсыз: карамельный/молочный")
+   //              switch (tury) {
+   //                case "карамельный":
+   //                  qospa = "карамельный"
+   //                    break;
+   //                case "молочный":
+   //                   qospa = "молочный"
+   //                  break;
+   //                  default:                  
+   //                  break;        
+   //                 }
+   //        break;
 
-    case "Чай":
-       alert("Сіз чай таңдадыңыз")
-    break;
+   //  case "Чай":
+   //     alert("Сіз чай таңдадыңыз")
+   //  break;
 
-    case "су":
-       alert("Сіз су таңдадыңыз")
-    break;
+   //  case "су":
+   //     alert("Сіз су таңдадыңыз")
+   //  break;
    
-    default:
-      alert("Ондай жоқ бізде")
-   }
+   //  default:
+   //    alert("Ондай жоқ бізде")
+   // }
 
-  
+                    // let i;
+                    //  for(i=1 ; i<=5; i+1){
+                    //     console.log(i);//
+                        
+                    //  }
+
+                // for(let i = 1; i<21; i++) {
+                //   if(i%2!= 0){
+                //         //    console.log(i + "-жұп");
+                          
+                //         // } else{
+                //      console.log(i + "-тақ");
+                     
+                //   }
+                // }
+
+                        // for(let i=1; i<10;i++){
+                        //   if(i===5){
+                        //     //  console.log(i);
+                        //     continue;}
+                        //     console.log(i);
+                        //     }
+
+                    // for(let i =10;i >=0; i--){
+                    //   if(i == 6 || i == 5){
+                    //     continue;
+                    //   }
+                    //   console.log(i); 
+                    // }
+
+                        // let san = +prompt("san engiz")
+                        // let sum=0;
+                        // for(let i=1; i<=san; i++ ){
+                        //   sum=sum+i
+                        //   console.log("sum бізде казір"+ sum);
+                          
+                        // }
+                        // alert(san+"дейінгі сандардың ұосындысы;"+sum)
+  //while: do циклдері
+
+  //  let i=0;
+  //  while(i<10){
+  //   if(i==5){
+  //   console.log("Цикл тоқтатылды,сан табылды: "+ i);
+  //       break;
+    
+  //   }
+  //   console.log(i);
+    
+  //   i++;
+  //   }
+          
+            // let san = +prompt("san engiz")
+            // let sum=0;
+            // let i=1;
+            // while( i<=san ){
+
+            //   sum=sum+i
+            //   console.log("sum бізде казір"+ sum);
+            //   i++
+            // }
+            // alert(san+" дейінгі сандардың қосындысы; "+sum)
+
+
+            
+                                                    // let i=10      
+                                                    // while( i<40){
+                                                    //    if(i>=20 && i<=30 && i % 2 == 0)
+                                                    //   {
+                                                    //     continue;
+                                                    //   }
+                                                    //     console.log(i);
+                                                    //     }
+let tarih = prompt("Қазақ хандығы қашан құрылды?")
+let shans=0
+   for( let i=shans; i>0;1--)
+if(tarih == 1465){
+    alert("Сіз дұрыс жауап бердіңіз ")
+  }
+ else("Сіз қате жауап бердіңіз"){
+  alert("Сіз қате жауап бердіңіз")
+ }
+
+"

@@ -307,14 +307,90 @@
                                                     //   }
                                                     //     console.log(i);
                                                     //     }
-let tarih = prompt("Қазақ хандығы қашан құрылды?")
-let shans=0
-   for( let i=shans; i>0;1--)
-if(tarih == 1465){
-    alert("Сіз дұрыс жауап бердіңіз ")
-  }
- else("Сіз қате жауап бердіңіз"){
-  alert("Сіз қате жауап бердіңіз")
- }
 
-"
+             // Шанс беру азаиту
+
+            // let tarih = prompt("Қазақ хандығы қашан құрылды?")
+            // let shans=3
+            //   while (shans>0) {
+            //       let soz = prompt("Қазақ хандығы қашан құрылды?")
+            //       if(soz == "1465"){
+            //         alert("Сіз дұрыс жауап бердіңіз!!!")
+            //         break;
+            //       }else{
+            //         shans--;
+            //         if(shans>0){
+            //           alert("Сізде қалған мүмкіндік саны: " + shans + '\n'+ "Қаита бағыңды сынап көр!")
+            //         }else{
+            //           alert("сізде мүмкіндік саны бітті! Тарих оқы")
+            //         }
+            //       }
+            //   }
+
+
+                            // let i=1;
+                            // let jup=0;
+                            // let taq =0;
+                            // while( i<=20) {
+                            //     if(i % 2 == 0){
+                            //       jup=jup+i
+                            //             console.log(`${i} jup ${jup}`);
+                            //       } else{
+                            //         taq=taq+i
+                            //         console.log(i+" taq " + taq);
+                                    
+                            //       }
+                            //       i++;
+                            //     }
+                            //   alert(`jup candar qosyndysy${jup}
+                            // Taq candar qosyndysy ${taq}`)
+                        
+                        // let san = +prompt("san engiz")
+                        // let i = 0;
+
+                        // while (i<=san ) {
+                        //   if(i % 3 == 0 && i%5==0) {
+                        //      console.log(`${i}bizde FizzBuzz`); 
+                        //   } else if (i%3==0){
+                        //     console.log(`${i} fizz`)
+                        //   } else if (i%5==0){
+                        //     console.log(`${i} bizde buzz`);
+                            
+                        //   }
+                        //   i++
+                          
+                        // }
+
+                        // let i;                        
+                        // for (i=3;i<=30;i+=3){
+                        //   console.log(i);    
+                        // }
+
+                          // let i=50;
+                          // while (i>=0) {
+                          //   console.log(i);
+                          //   i-=5
+                          // }
+                      //    let san = 1;
+                      //    for(let i = 1;i<=15;i++){
+                      //     san *=i
+                      //    }
+                      //  console.log(`саннын факторлары: ${san}`);
+//let syrak1 = prompt("Су ағылшын тілінде қалай аталады?")                      
+// let syrak2 = prompt("Тамақ ағылшын тілінде қалай аталады?")
+let shans=4 
+while (shans>0) { 
+  let syrak = prompt("Су ағылшын тілінде қалай аталады?")                      
+  if (syrak=="Water") {
+                          
+   alert(`Сіз дұрыс жауап бердіңіз!`)
+   break;
+  } else{
+     shans--;
+     if(shans>0) {
+         alert("Сізде қалған мүмкіндік саны: " + shans + '\n'+ "Қаита бағыңды сынап көр!")
+         }else{
+         alert("сізде мүмкіндік саны бітті! ")
+         }  
+  }
+}

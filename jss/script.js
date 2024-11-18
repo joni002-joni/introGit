@@ -378,19 +378,80 @@
                       //  console.log(`саннын факторлары: ${san}`);
 //let syrak1 = prompt("Су ағылшын тілінде қалай аталады?")                      
 // let syrak2 = prompt("Тамақ ағылшын тілінде қалай аталады?")
-let shans=4 
-while (shans>0) { 
-  let syrak = prompt("Су ағылшын тілінде қалай аталады?")                      
-  if (syrak=="Water") {
-                          
-   alert(`Сіз дұрыс жауап бердіңіз!`)
-   break;
-  } else{
-     shans--;
-     if(shans>0) {
-         alert("Сізде қалған мүмкіндік саны: " + shans + '\n'+ "Қаита бағыңды сынап көр!")
-         }else{
-         alert("сізде мүмкіндік саны бітті! ")
-         }  
-  }
+                                                                        // let shans=4 
+                                                                        // while (shans>0) { 
+                                                                        //   let syrak = prompt("Су ағылшын тілінде қалай аталады?")                      
+                                                                        //   if (syrak=="Water") {
+                                                                                                  
+                                                                        //   alert(`Сіз дұрыс жауап бердіңіз!`)
+                                                                        //   break;
+                                                                        //   } else{
+                                                                        //     shans--;
+                                                                        //     if(shans>0) {
+                                                                        //         alert("Сізде қалған мүмкіндік саны: " + shans + '\n'+ "Қаита бағыңды сынап көр!")
+                                                                        //         }else{
+                                                                        //         alert("сізде мүмкіндік саны бітті! ")
+                                                                        //         }  
+                                                                        //   }
+                                                                        // }
+    //function
+            //     salember("hello world",5);
+
+            // function salember(habar, san) {
+            //   alert(habar)
+            //   console.log(san);
+              
+            // }
+
+// let qosasyn = function (number1,number2) {//өзінен кеиін жазылады сол кезде орындалады  иолттт 
+//   return number1+number2
+// }
+// let kobeitu = qosuamalu(3,5)*azaituaamalu(5,3)*qosasyn(8,5)
+// alert(kobeitu)    
+
+//    qosuamalu(3,5);
+//     function qosuamalu(san1, san2) {
+//         console.log(san1+san2);
+//         return san1+san2 
+//     }            
+//     function azaituaamalu(num1,num2){
+//       return num1-num2
+//     }
+
+                  // let azaitu = function(san1, san2) {
+                  //   console.log("azaituuuu"+(san1-san2));
+                  //   return san1-san2
+                  // }
+
+                  // let natije = qosu(10,5)+ azaitu(6,3)+ bolu(4,2)
+                  // alert ("Natizhe "+ natije)
+
+                  // function qosu(san1,san2) {
+                  //   console.log("qosyy"+(san1+san2));
+                  //   return san1+san2 
+                  // }
+
+                  // function bolu(san1,san2) {
+                  //   console.log("boluu"+(san1/san2));
+                  //   return san1/san2
+                  // }
+
+// let esim = prompt("Есіміңізі енгізіңіз!")
+
+// function names() {
+//   return esim 
+// }
+// alert("Cәлем " + esim   )
+
+
+let san1 = prompt("бірінші сан")
+let san2 = prompt("екінші сан")
+let san3 = prompt("үшінші сан")
+
+function kobeitu(san1,san2,san3) {
+  return san1*san2*san3
 }
+
+alert(kobeitu(san1,san2,san3))
+
+                           

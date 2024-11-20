@@ -402,22 +402,22 @@
             //   console.log(san);
               
             // }
+/*
+let qosasyn = function (number1,number2) {//өзінен кеиін жазылады сол кезде орындалады  иолттт 
+  return number1+number2
+}
+let kobeitu = qosuamalu(3,5)*azaituaamalu(5,3)*qosasyn(8,5)
+alert(kobeitu)    
 
-// let qosasyn = function (number1,number2) {//өзінен кеиін жазылады сол кезде орындалады  иолттт 
-//   return number1+number2
-// }
-// let kobeitu = qosuamalu(3,5)*azaituaamalu(5,3)*qosasyn(8,5)
-// alert(kobeitu)    
-
-//    qosuamalu(3,5);
-//     function qosuamalu(san1, san2) {
-//         console.log(san1+san2);
-//         return san1+san2 
-//     }            
-//     function azaituaamalu(num1,num2){
-//       return num1-num2
-//     }
-
+   qosuamalu(3,5);
+    function qosuamalu(san1, san2) {
+        console.log(san1+san2);
+        return san1+san2 
+    }            
+    function azaituaamalu(num1,num2){
+      return num1-num2
+    }
+*/
                   // let azaitu = function(san1, san2) {
                   //   console.log("azaituuuu"+(san1-san2));
                   //   return san1-san2
@@ -444,14 +444,77 @@
 // alert("Cәлем " + esim   )
 
 
-let san1 = prompt("бірінші сан")
-let san2 = prompt("екінші сан")
-let san3 = prompt("үшінші сан")
+                  // let san1 = prompt("бірінші сан")
+                  // let san2 = prompt("екінші сан")
+                  // let san3 = prompt("үшінші сан")
 
-function kobeitu(san1,san2,san3) {
-  return san1*san2*san3
+                  // function kobeitu(san1,san2,san3) {
+                  //   return san1*san2*san3
+                  // }
+
+                  // alert(kobeitu(san1,san2,san3))
+
+    //  function bolu(san1,san2) {
+    //   return san1/san2     
+    //  }                      
+
+    //  let bolingenMan = bolu(15,5)//bolingenMan=> 15/5
+    //  console.log(bolingenMan);
+
+    //  function kobeitu(san1,san2) {
+    //   return san1*san2
+    //  }
+
+    //  let kobeityAmalu = kobeitu(bolu(15,5),2)//3*2
+    //  console.log(kobeityAmalu);
+
+// let qosu = (san1,san2) => san1+san2;
+
+// console.log(qosu(5,3));
+
+                  //     let qosu = (san1,san2) => san1+san2;
+                        
+                  //     let azaitu = (san1,san2) => san1-san2;
+
+                  //     let qobeitu = (san1,san2) => san1*san2;
+
+                  // let qobeituu = qobeitu(qosu(11,5),azaitu(5,3))
+                  //     alert(qobeituu)
+
+
+        /* См ді ММ ге ауыстыру көбеиту тәсілі
+
+          let san = +prompt("San zhaz cm => mm")
+          let converCmtoMm = (number) => number*10
+          let converter=converCmtoMm (san);
+          alert(`${san} cm = ${converter} mm`)
+          */
+  /*
+  Санның дәрежесін шығару
+ let san1 = +prompt("San engiz")
+ let san2 = +prompt("san darezhesin engiz")
+ let sann = 1
+ for(let i = 0;i < san2;i++){
+  sann=sann*san1;
+ }
+ alert(`${san1} санының ${san2} дәрежесі = ${sann}`)
+ */
+
+    /*Валюта қанша екенін тексеру*/
+  let number = +prompt("Aqsha engiz")
+  let valut = prompt("Valuta turin engiz: dollor/euro/rubl")
+
+function converterValut(aksha, valut) {
+  if (valut=="dollor") {
+    return aksha*496
+  }else  if (valut=="euro") {
+    return aksha*526
+  }else  if (valut=="rubl") {
+    return aksha*5.07
+  }else{
+    alert("Error")
+  }
 }
+let convert = converterValut(number, valut)
 
-alert(kobeitu(san1,san2,san3))
-
-                           
+alert(`${number} ${valut} = ${convert} tenge`)

@@ -500,21 +500,96 @@ alert(kobeitu)
  alert(`${san1} санының ${san2} дәрежесі = ${sann}`)
  */
 
-    /*Валюта қанша екенін тексеру*/
-  let number = +prompt("Aqsha engiz")
-  let valut = prompt("Valuta turin engiz: dollor/euro/rubl")
+                  /*Валюта қанша екенін тексеру
+                let number = +prompt("Aqsha engiz")
+                let valut = prompt("Valuta turin engiz: dollor/euro/rubl")
 
-function converterValut(aksha, valut) {
-  if (valut=="dollor") {
-    return aksha*496
-  }else  if (valut=="euro") {
-    return aksha*526
-  }else  if (valut=="rubl") {
-    return aksha*5.07
-  }else{
-    alert("Error")
+              function converterValut(aksha, valut) {
+                if (valut=="dollor") {
+                  return aksha*496
+                }else  if (valut=="euro") {
+                  return aksha*526
+                }else  if (valut=="rubl") {
+                  return aksha*5.07
+                }else{
+                  alert("Error")
+                }
+              }
+              let convert = converterValut(number, valut)
+
+              alert(`${number} ${valut} = ${convert} tenge`)
+              */
+
+    // document. getElementById("give-Alert")
+    // .addEventListener("click",function () {
+    //   /* ()=>  қысқртылған түрі*/ alert("Qalaisun Zhanyat")
+    // })
+/*
+    //task1 
+    let qosy = (a,b)=> a+b;
+    console.log(qosy(5,6));
+    
+    //task2
+    let findlenght = (text)=>text.lenght;
+    console.log(findlenght ("hello,Gays!"));
+
+    //task3
+    function bolu(a,b  ) {
+      
+    }
+*/
+
+                // let sum = 0
+                // let tagam;
+                // let max=0
+                // function tovar(){
+                //   let i = 1;
+                // while (true) {
+                //       let shgyn = prompt(`Shgyn nomeri ${i}`)
+                //       //let baga = prompt(`Bagasy qansha ${i}`)
+                //       if (shgyn.toLowerCase == "аяқтау") {
+                //         console.log(`shgyn nomeri #${i}:аяқтау`);
+                //         console.log(`ketken summa: ${sum}`);
+                //         console.log(`En qumbat shygyn: ${tagam}`);
+                //         break;
+                //       }
+                //   i++;
+                //   }
+                // }
+
+                // tovar(); 
+/*
+Тапсырма: Ақша жинау және евроға аудару
+   Бұл бағдарламада пайдаланушы цикл арқылы бірнеше рет ақша сомасын және олардың валютасын енгізе алады.
+    Әр енгізілген ақша евроға (EUR) айналдырылып, қосылады. Егер пайдаланушы 0 десе, цикл тоқтап, барлық соманың евродағы қосындысы көрсетіледі.
+USD → EUR: 0.85
+KZT → EUR: 0.002
+EUR → EUR: 1
+Пайдаланушы ақшаның сомасын және валютасын (USD, KZT, EUR) бөлек промпт арқылы енгізеді.
+Жүйе енгізілген соманы евроға айналдырып қосады.Егер пайдаланушы "стоп" деп жазса, цикл тоқтап, жалпы қосынды көрсетіледі.
+*/
+
+ let summa = 0
+// let valut;
+
+ function valutEsep() {
+  while (true) {
+    let valutSumasu = +prompt(`Сомманы енгізіңіз(немесе"Стоп"сөзін енгізіңіз!)`)
+    let valut = prompt("Valuta turin engiz: USD/KZT/EURO")
+    if (valutSumasu.toLowerCase()=="Стоп") {
+            break;
+    } else if (valut == USD){
+       return baga*0.85
+    } else if (valut == KZT){
+        return baga*0.002
+    } else if (valut == EURO){
+      return baga*1
+    }
+    summa = summa + valutSumasu
   }
-}
-let convert = converterValut(number, valut)
+  alert(`${summa}`)
+ }
 
-alert(`${number} ${valut} = ${convert} tenge`)
+valutEsep();
+
+

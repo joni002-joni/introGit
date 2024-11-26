@@ -394,14 +394,13 @@
                                                                         //         }  
                                                                         //   }
                                                                         // }
-    //function
-            //     salember("hello world",5);
-
-            // function salember(habar, san) {
-            //   alert(habar)
-            //   console.log(san);
+    // function salember("hello world"5){
+    //         function salember(habar, san) {
+    //           alert(habar)
+    //           console.log(san);
               
-            // }
+    //         }
+    //       }
 /*
 let qosasyn = function (number1,number2) {//өзінен кеиін жазылады сол кезде орындалады  иолттт 
   return number1+number2
@@ -559,37 +558,116 @@ alert(kobeitu)
 
                 // tovar(); 
 /*
-Тапсырма: Ақша жинау және евроға аудару
-   Бұл бағдарламада пайдаланушы цикл арқылы бірнеше рет ақша сомасын және олардың валютасын енгізе алады.
-    Әр енгізілген ақша евроға (EUR) айналдырылып, қосылады. Егер пайдаланушы 0 десе, цикл тоқтап, барлық соманың евродағы қосындысы көрсетіледі.
-USD → EUR: 0.85
-KZT → EUR: 0.002
-EUR → EUR: 1
-Пайдаланушы ақшаның сомасын және валютасын (USD, KZT, EUR) бөлек промпт арқылы енгізеді.
-Жүйе енгізілген соманы евроға айналдырып қосады.Егер пайдаланушы "стоп" деп жазса, цикл тоқтап, жалпы қосынды көрсетіледі.
+let jasu = +prompt("Жасыңызды енгізіңіз!")
+//let age = 0;
+
+function jasunEsepteu() {
+ if(jasu<0){
+    alert(`Сіз дұрыс емес сан жаздыңыз!`)
+  } else if (jasu<18) {
+    alert(`Сіз кәмелетке толмағансыз!`)
+  } else if(jasu>=18 && jasu<=59){
+    alert(`Сіз ересек адамсыз!`)
+  } else if (jasu>=60){
+    alert(`Сіз шалсыз!!!`)
+  } else {
+ alert(`Сіз не жазып кеттіңі!!`)
+  }
+}
+jasunEsepteu();
 */
 
- let summa = 0
-// let valut;
 
- function valutEsep() {
-  while (true) {
-    let valutSumasu = +prompt(`Сомманы енгізіңіз(немесе"Стоп"сөзін енгізіңіз!)`)
-    let valut = prompt("Valuta turin engiz: USD/KZT/EURO")
-    if (valutSumasu.toLowerCase()=="Стоп") {
-            break;
-    } else if (valut == USD){
-       return baga*0.85
-    } else if (valut == KZT){
-        return baga*0.002
-    } else if (valut == EURO){
-      return baga*1
-    }
-    summa = summa + valutSumasu
-  }
-  alert(`${summa}`)
- }
+// document.getElementById("give alert")
+//  .addEventListener("click",()=> alert("Мен жақсымын!"))
 
-valutEsep();
+// let san1 = +prompt(`Бірінші санды енгізіңіз!`)
+// let san2 = +prompt(`Екінші санды енгізіңіз!`)
+// let saan=0;
+// function sanEngizu() {
+//   let i =0;
+//     if (san1<san2 ) {
+//       console.log(`${i}`);
+//       console.log(`${saan}`);
+      
+//     } else  
+//         saan = saan + i 
+//         if (san1>san2) {
+//           console.log(`durus emes`);
+//         }
+//  i++;
+ 
+  
+// }
 
 
+// sanEngizu();
+ 
+
+
+    // Массивввв
+// let fruits = ["alma","banan","nan"]
+//           // console.log(fruits[1]);//banan
+//           // console.log(fruits[2]);//nan
+//           // console.log(fruits[0]);//alma
+// console.log(fruits);
+
+// fruits[2] = "Efrat"
+// fruits[3] = "ananas"
+// fruits[4] = "grahat"
+
+// console.log(fruits);
+
+  //    let fruts = ["alma","banan","shie",5,6,5]
+      //  1
+      // fruts[3]= "apelsin"
+      // console.log(fruts);
+      
+     //2
+      // fruts[2]= "mango"
+      // console.log(fruts);
+    //3
+//       console.log(fruts[0]= "alma");
+//       console.log(fruts[1]= "banan");
+//       console.log(fruts[2]= "shie");
+// for (let  i = 0;  i< fruts.length; i++) {
+//   console.log(fruts[i]);
+// }
+      
+                 let san1 = +prompt("San engizesiz?")
+                 let arr = []
+                 for (let i = 0; i < san1; i++) {
+                     let arrSan = +prompt(`${i}-index sanun engiz`)
+                   arr[i]=arrSan
+                  //  console.log(`${i}-sany ${arrSan}`);
+                  //  console.log("Massiv arr: ",arr);
+                   
+                 }
+                 console.log(arr);
+                 
+
+
+   let fudbol = ["Ranaldo","Zidan","Neimar","Benzema"]
+         console.log(fudbol);            
+    fudbol[1]= "Messi"
+    fudbol[4] = "januat"
+    fudbol[5]="jandos"
+    fudbol[6]="jambo"
+          console.log(fudbol);
+     if(fudbol>5){
+      console.log("kop");
+     } else {
+      console.log("az");
+     }
+
+
+
+
+    // for (let i=5;i<fudbol;){
+    //   console.log("kop");
+      
+    // }
+    // for(let i=5;i>fudbol;){
+    //   console.log("az");
+      
+    // }

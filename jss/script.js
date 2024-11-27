@@ -634,40 +634,106 @@ jasunEsepteu();
 //   console.log(fruts[i]);
 // }
       
-                 let san1 = +prompt("San engizesiz?")
-                 let arr = []
-                 for (let i = 0; i < san1; i++) {
-                     let arrSan = +prompt(`${i}-index sanun engiz`)
-                   arr[i]=arrSan
-                  //  console.log(`${i}-sany ${arrSan}`);
-                  //  console.log("Massiv arr: ",arr);
+                //  let san1 = +prompt("San engizesiz?")
+                //  let arr = []
+                //  for (let i = 0; i < san1; i++) {
+                //      let arrSan = +prompt(`${i}-index sanun engiz`)
+                //    arr[i]=arrSan
+                //   //  console.log(`${i}-sany ${arrSan}`);
+                //   //  console.log("Massiv arr: ",arr);
                    
-                 }
-                 console.log(arr);
+                //  }
+                //  console.log(arr);
                  
+   
+   
+      // Массив методтары
+      //let array = ["januat","amjlit",2024]
+      // console.log(array);
 
+      //   // push()-Массив соңына элементтер қосады
+      // array.push("Market",5)
 
-   let fudbol = ["Ranaldo","Zidan","Neimar","Benzema"]
-         console.log(fudbol);            
-    fudbol[1]= "Messi"
-    fudbol[4] = "januat"
-    fudbol[5]="jandos"
-    fudbol[6]="jambo"
-          console.log(fudbol);
-     if(fudbol>5){
-      console.log("kop");
-     } else {
-      console.log("az");
-     }
+      //    //pop()-Массивтің сонғы элементін алып тастайды.
+      // let pop = array.pop()
+      // console.log("alyngan san: "+pop);
+      // console.log(array);
 
+      // // shift()- Массивтің бірінші элементін алып тастаиды.
+      // let shift = array.shift()
+      // console.log("Бірінші алып тасталған элемент: "+shift);
+      // console.log(array);
 
+      //   //unshift()-Массив басына элемент қосады
+      // array.unshift("Efrat","Aziz")
+      // console.log(array);
+      // let soz = prompt("soz engiz")
+      // array.push=(soz)
 
+      //slice()- ештенеге тиіспеи ішіндегі элементті алу
+            // let massiv = [58,69,25,9,55,34,78]
+            // let sliceElements=massiv.slice(2,5)
+            // console.log(sliceElements);
+            // console.log(massiv);
 
-    // for (let i=5;i<fudbol;){
-    //   console.log("kop");
+      //splice()- элементтерді өшіру немесе қосу немесе өшіріп орнына қосу
+      // let massiv = [58,69,25,9,55,34,78]
+      // massiv.splice(2,1,100)
+      // console.log(massiv);
       
-    // }
-    // for(let i=5;i>fudbol;){
-    //   console.log("az");
       
-    // }
+                                //     let sun = ["miras","elmura","aziz","beks"]
+                                //     console.log(sun);
+                                    
+                                //     let san = +prompt("Қанша элемент енгізесіз?")
+                                //     for (let i = 0; i < san; i++) {
+                                //         let san1 = prompt(`${i} qalgan soz`)
+                                //     sun.push(san1)
+                                //     console.log(sun);
+                                //   
+                                // console.log(sun);
+                                
+                                 
+                                // let san=[10,20,30,40]
+                                // console.log(san);
+
+                                // san.push(50)
+                                // console.log(san);
+
+                                // san.shift()
+                                // console.log(san);
+
+                                // san.splice(1,1,25)
+                                // console.log(san);
+
+                                //    let san1= san.slice(2,4)
+                                // console.log(san1);
+                                   
+                                // . Бос массив ашыңыз => sandar = []
+                                // 2. Қолданушыдан сан енгізуді ЦИКЛ арқылы сұрай беріңіз.
+                                // 3. Егер жұп сан болса, Массивтің басына қосасыз, егер тақ болса соңына қосасыз.
+                                // 4. Қолданушы 0 енгізсе тоқтатасыз.
+                                // 5. Соңында массивтің өзін және ұзындығын шығарасыз            
+                                 
+                            
+                                let sann = []
+                               while (true) {
+                                let sandar = +prompt("San engiziniz!")
+                                
+                                if(sandar == 0) {
+                                  break;
+                                } else if (sandar%2==0){
+                                      sann.unshift(sandar)
+                                  }else {
+                                      sann.push(sandar)
+                                  }   
+                               }
+                               console.log("Massiv",sann);
+                               console.log("Massiv ұззындығы",sann.length);
+                               
+                               
+                        
+
+
+
+               

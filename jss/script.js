@@ -647,7 +647,7 @@ jasunEsepteu();
                  
    
    
-      // Массив методтары
+      // Массив методтары let()- massiv letpen jasalu jolu
       //let array = ["januat","amjlit",2024]
       // console.log(array);
 
@@ -709,31 +709,90 @@ jasunEsepteu();
                                 //    let san1= san.slice(2,4)
                                 // console.log(san1);
                                    
-                                // . Бос массив ашыңыз => sandar = []
-                                // 2. Қолданушыдан сан енгізуді ЦИКЛ арқылы сұрай беріңіз.
-                                // 3. Егер жұп сан болса, Массивтің басына қосасыз, егер тақ болса соңына қосасыз.
-                                // 4. Қолданушы 0 енгізсе тоқтатасыз.
-                                // 5. Соңында массивтің өзін және ұзындығын шығарасыз            
-                                 
-                            
-                                let sann = []
-                               while (true) {
-                                let sandar = +prompt("San engiziniz!")
+  
                                 
-                                if(sandar == 0) {
-                                  break;
-                                } else if (sandar%2==0){
-                                      sann.unshift(sandar)
-                                  }else {
-                                      sann.push(sandar)
-                                  }   
-                               }
-                               console.log("Massiv",sann);
-                               console.log("Massiv ұззындығы",sann.length);
-                               
-                               
-                        
+// for()- massiv formen jasau jolu!!!!
+//[i]men jasaidu
+    // let arr = [1,77,32,74]
+    // for(let i=0;i<arr.length;i++){
+    //   console.log(i+1+"-interatsia"+arr[i]);
+    // }
+
+//  of = i-tilinen jenil turu
+      // let ar = [1,77,32,74]
+      // for(let san of ar){
+      //   console.log(san);
+      // }
+
+ // fruits.forEach(function (jemis) osy kamanda boiynsha jumys jasaidy
+      // let fruits =["alma","banan","mango"]
+      //   fruits.forEach(function (jemis) {
+      //     console.log(jemis);
+      //   });
+
+//Әр элементті өзгертеді және массив жасайды - map
+    //  let sandar = [4,7,8,10,9]
+    //  let doulet = sandar.map(san=>san*2)
+    //  console.log(doulet);// шыққан нәтиже = [8,14,16,20,18]
+   
+//map- жұп және тақ сан шығару
+      // let sandarr = [4,7,8,10,9]
+        // let daulet = sandarr.map(san=>{
+        //    if (san%2==0) {
+        //     return san
+        //    } else {
+        //     return "taq"
+        //    }
+        // })
+//қысқартылған түрі
+        // let daulet = sandarr.map(san=>san%2==0?san:"taq")
+        //   console.log(daulet);
+
+//!!!!!!!!!!!!!!!!!!!        
+      // let sozder = ["almaty. ","astana. ","qaragandy. "]
+      // let city = []                      
+      // for(let i=0;i<sozder.length;i++){
+      //   city[i]=sozder[i]+"q"
+      // }                     
+      // console.log(city);// нәтижесі ['almaty. q', 'astana. q', 'qaragandy. q']
+
+//filter() - Massiv uzyndygyn qysqarta alady
+        //jyp san
+            // let sandarr = [4,7,8,10,9]
+            // let even = sandarr.filter(san=>san%2==0)
+            // console.log(even);
+        //taq san
+            // let odd = sandarr.filter(san=>san%2==1)
+            // console.log(odd);
+        
+//reduce   Барлық элеметтерді жинаиды,бір мәнге жинаиды    
 
 
 
-               
+// .
+// - Тапсырма:
+// Бізде массив берілген. Массивтегі әр санды кубтаңыз(үш дәреже).(map())
+// Кубталған сандардың ішінен тек тақ сандарды шығару керек.(for...of)
+// 2 - Тапсырма:
+//  Студент санын промпт арқылы сұраңыз.
+// Әр студенттің бағаларын массив ашып соған салыңыз.
+// "reduce" арқылы айнымалы ашып барлық бағаны жинаңыз, және Оқушылардың ортақ бағасын шығарыңыз. (Ортақ баға = Барлық студент бағаларының қосындысы / Студент саны) .
+// "filter" арқылы 85тен жоғары баллдарды жинап шығарып беріңіз
+// Әдеттегідей Github-қа жүктеп, сілтемесін өткіземіз!
+// ЕСКЕРТУ! Үй жұмысын бүгінгі өткен тақырыпты қолдана отырып жасайсыздар!
+            
+let stydent = +prompt("Студенттердің санын енгізіңіз!!!")
+let baga = []
+                for (let i = 0; i < stydent; i++) {
+                        let bagaEsep = +prompt(`${i}-ші Студенттің бағасын енгізіңіз`)   
+                        baga[i]=bagaEsep
+                           console.log(`${i}-ші Студент бағасы  ${bagaEsep}`);
+                     }
+                     console.log(baga);
+ let sum = baga.reduce((total,num)=>total+num,0)
+ console.log("Барлық бағаның жиындығы "+sum);
+ 
+ let jogaryBal = baga.filter(sym=>sym>85)
+ console.log(`Жоғары бал алғандар Студенттер бағасы ${jogaryBal}`) 
+
+  

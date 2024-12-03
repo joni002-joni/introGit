@@ -20,7 +20,7 @@
                                     console.log(`${i}-ші Студент бағасы  ${bagaEsep}`);
                                 }
                                 console.log(baga);
-            let sum = baga.reduce((total,num)=>total+num,0)
+            let sum = baga.reduce((total,num)=>total+num/1)
             console.log("Барлық бағаның жиындығы "+sum);
             
             let jogaryBal = baga.filter(sym=>sym>=85)

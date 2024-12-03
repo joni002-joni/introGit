@@ -765,34 +765,96 @@ jasunEsepteu();
             // let odd = sandarr.filter(san=>san%2==1)
             // console.log(odd);
         
-//reduce   Барлық элеметтерді жинаиды,бір мәнге жинаиды    
-
-
-
-// .
-// - Тапсырма:
-// Бізде массив берілген. Массивтегі әр санды кубтаңыз(үш дәреже).(map())
-// Кубталған сандардың ішінен тек тақ сандарды шығару керек.(for...of)
-// 2 - Тапсырма:
-//  Студент санын промпт арқылы сұраңыз.
-// Әр студенттің бағаларын массив ашып соған салыңыз.
-// "reduce" арқылы айнымалы ашып барлық бағаны жинаңыз, және Оқушылардың ортақ бағасын шығарыңыз. (Ортақ баға = Барлық студент бағаларының қосындысы / Студент саны) .
-// "filter" арқылы 85тен жоғары баллдарды жинап шығарып беріңіз
-// Әдеттегідей Github-қа жүктеп, сілтемесін өткіземіз!
-// ЕСКЕРТУ! Үй жұмысын бүгінгі өткен тақырыпты қолдана отырып жасайсыздар!
-            
-let stydent = +prompt("Студенттердің санын енгізіңіз!!!")
-let baga = []
-                for (let i = 0; i < stydent; i++) {
-                        let bagaEsep = +prompt(`${i}-ші Студенттің бағасын енгізіңіз`)   
-                        baga[i]=bagaEsep
-                           console.log(`${i}-ші Студент бағасы  ${bagaEsep}`);
-                     }
-                     console.log(baga);
- let sum = baga.reduce((total,num)=>total+num,0)
- console.log("Барлық бағаның жиындығы "+sum);
- 
- let jogaryBal = baga.filter(sym=>sym>85)
- console.log(`Жоғары бал алғандар Студенттер бағасы ${jogaryBal}`) 
+//reduce()   Барлық элеметтерді жинаиды,бір мәнге жинаиды    
 
   
+  // Objects "key-valye" 
+  
+// let mashina ={
+//   drend:"toyota",
+//   model:"camry",
+//   jyly:"2023",
+//   //ішіне енгізу 
+//   drive:function(){
+//     alert("журуге арналган даиын")
+//   }
+// }
+// let calcylator ={
+//   add:(a,d)=>a+d
+// }
+//  console.log(calcylator.add(5,6));
+//  mashina.drive()
+ 
+//   console.log( mashina.jyly);
+//   console.log( mashina.model);
+  
+// mashina.model ="lada"
+//   console.log(mashina.model);
+
+// mashina.tusu = "aq"
+//   console.log(mashina.tusu);
+   
+//   let device = {
+//     devicsAty:"Laptop",
+//     model:"lehovo",
+//     baga:350000,
+//     discount:function(){
+//       return this.baga*0.5
+//     }
+//   }  
+//     console.log(`Skidkamen bagasy: ${device.discount()} tenge`);
+ 
+    
+
+      //   let inform ={
+      //     Esimim:"JANYAT",
+      //     jasum:"22 - de",
+      //     Adres:"Qorday",
+      //     info:function(){
+      //       return`Esimim->${this.Esimim} \njasy->${this.jasum} \nAdres->${this.Adres}`
+      //     }
+      //   }
+      // console.log(inform.info());
+  
+
+  // let books = {
+  //   book:["tostik","Abay joly","aziz" ],
+  //   addBook:function(kitap){
+  //   this.book.push(kitap)
+  //   }
+  // }
+  // let kitapqos = prompt("qandai kitap qosasun")
+  //  books.addBook(kitapqos)
+  // console.log(books.book);
+  
+
+                                                        // let film = {
+                                                        //   kino:["Mistiteli","Я легенда","Astral"],
+                                                        //   addKino:function(films){
+                                                        //     this.kino.push(films)
+                                                        //   }
+                                                        // }             
+                                                        // let filmQos = prompt("Qandai film qosasyn")
+                                                        // film.addKino(filmQos)
+                                                        // console.log(film.kino);
+                                
+                                                    //  Футболшының атын, тегін, жасын, гол санын, ойнаған командаларын енгіз.
+                                                    //  Командаларын массивке жазу керек
+                                                    //  2. Соңғы ойында ойыншы 2 гол соқты сондықтан гол санын 2 ге арттыр.
+                                                    //  3. Функция шақыру арқылы атын және тегін бірге шығару керек.
+                                                    //  4. Функция арқылы қазіргі клубын шығару керек (Қазіргі клубы массив соңында болады).
+
+                                         let fudbol = {
+                                          aty:"Ranalldo",
+                                          tegi:"Cristiano",
+                                          golSanu:"913",
+                                          jasu:"39",
+                                          camandalar:["Sporting,Man United,Real Madrid,Juventus,Al Nassr"],
+                                          camandalar : function(camandalar){
+                                              return this.camandalar.jion(',') 
+                                         }
+                                         } 
+                                         alert(`Аты: ${aty} \nТегі: ${tegi} \nНегізгі гол саны: ${golSanu}\nЖасы: ${jasu} \n Камандалар:${camandalar}`)
+                                        
+                                         
+                                         fudbol.golSanu = "915"

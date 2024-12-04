@@ -838,23 +838,124 @@ jasunEsepteu();
                                                         // film.addKino(filmQos)
                                                         // console.log(film.kino);
                                 
-                                                    //  Футболшының атын, тегін, жасын, гол санын, ойнаған командаларын енгіз.
-                                                    //  Командаларын массивке жазу керек
-                                                    //  2. Соңғы ойында ойыншы 2 гол соқты сондықтан гол санын 2 ге арттыр.
-                                                    //  3. Функция шақыру арқылы атын және тегін бірге шығару керек.
-                                                    //  4. Функция арқылы қазіргі клубын шығару керек (Қазіргі клубы массив соңында болады).
+     
+//  // Nested 
 
-                                         let fudbol = {
-                                          aty:"Ranalldo",
-                                          tegi:"Cristiano",
-                                          golSanu:"913",
-                                          jasu:"39",
-                                          camandalar:["Sporting,Man United,Real Madrid,Juventus,Al Nassr"],
-                                          camandalar : function(camandalar){
-                                              return this.camandalar.jion(',') 
-                                         }
-                                         } 
-                                         alert(`Аты: ${aty} \nТегі: ${tegi} \nНегізгі гол саны: ${golSanu}\nЖасы: ${jasu} \n Камандалар:${camandalar}`)
-                                        
-                                         
-                                         fudbol.golSanu = "915"
+//   //кітап жалғау ізіне
+//  let qoldanushi = {
+//   name:"Aliya",
+//   age:28,
+//   hobbies:["Muzik","Read book","Play games"]
+//  }
+
+//    //сөз жалғау филм кітап жалғау сонына
+//    while(true){
+//     let hobby = prompt("hobby turin jaz")
+//     if(hobby == 0){
+//       break;
+//     }
+//     qoldanushi.hobbies.push(hobby)
+//    }
+
+// //ұзын сөзді алып тастау және қысөа сөзді алып тастау
+//    let uzun = qoldanushi.hobbies.filter(
+//     hobbies=>hobbies.length>=6
+//    )
+//   console.log(uzun);
+  
+//    console.log(qoldanushi);
+   
+
+
+    // // Жасы улкен жане копше турде колдану
+    // let qoldanushilar = [
+    //   {
+    //     name:"alyia",
+    //     age:18
+    //   }, 
+    //   {
+    //     name:"aigerim",
+    //     age:30
+    //   },
+    //   {
+    //     name:"jandos",
+    //     age:28
+    //   },
+    // ]
+    // console.log(qoldanushilar.filter(aigera=>aigera.name == "aigerim"));
+    // console.log(qoldanushilar.filter(jasy=>jasy.age>=25));
+    
+//    
+    // let course = {
+    //   course_aty:"Amjlit Cyber School",
+    //   mugalimder: [
+    //     {
+    //     name:"Galumbek",
+    //     age:25,
+    //     hobbies:["Muzik","Read book","Play games"]
+    //     },
+    //     {
+    //       name:"Rosa",
+    //       age:20,
+    //       hobbies:["Muzik","Read book","Play games"]
+    //     },
+    //     {
+    //       name:"Temirlan",
+    //       age:26,
+    //       hobbies:["Muzik","Read book","Play games"]
+    //     }
+    //     ],
+    // oqyshilar:[
+    //     {
+    //       name:"Efrat",
+    //       age:26
+    //     },
+    //     {
+    //       name:"Anyar",
+    //       age:16
+    //     }
+    //   ]
+    // }
+    // course.mugalimder[2].name="Dilnaz"
+    // course.mugalimder.push({name:"Janyat", age:22})
+    // console.log(course.mugalimder);
+
+    // let flatted=course.mugalimder.flatMap(hobbies=>hobbies.hobbies)
+    
+    // console.log(flatted  );
+    
+    let synyp = [
+        {
+          name:"Janyat",
+          age:22,
+          panderi:["Algebra","Ximia","Biologia"]
+        }, 
+        {
+          name:"Miras",
+          age:21,
+          panderi:["Programma","English","Geometria"]
+        },
+        {
+          name:"Anuar",
+          age:16,
+          panderi:["Fizika","Beineley","Texnologia"]
+        },
+      ]
+      console.log(synyp);
+
+      let pan = synyp.flatMap(panderi=>panderi.panderi)
+      console.log(pan);
+      
+  function jasOqyshy(){
+    let min = synyp[0].age
+    let jasOqyshyAty=""
+    for(let i=1;i<synyp.length;i++){
+      if (min>synyp[i].age) {
+        min = synyp[i].age
+        jasOqyshyAty=synyp[i].name
+      }
+    }
+    
+  alert("En jas oqushy: "+ jasOqyshyAty +`\njasy: ` +min)
+  }
+  jasOqyshy()

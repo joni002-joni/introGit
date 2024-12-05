@@ -924,38 +924,130 @@ jasunEsepteu();
     
     // console.log(flatted  );
     
-    let synyp = [
-        {
-          name:"Janyat",
-          age:22,
-          panderi:["Algebra","Ximia","Biologia"]
-        }, 
-        {
-          name:"Miras",
-          age:21,
-          panderi:["Programma","English","Geometria"]
-        },
-        {
-          name:"Anuar",
-          age:16,
-          panderi:["Fizika","Beineley","Texnologia"]
-        },
-      ]
-      console.log(synyp);
+        //   let synyp = [
+        //       {
+        //         name:"Janyat",
+        //         age:22,
+        //         panderi:["Algebra","Ximia","Biologia"]
+        //       }, 
+        //       {
+        //         name:"Miras",
+        //         age:21,
+        //         panderi:["Programma","English","Geometria"]
+        //       },
+        //       {
+        //         name:"Anuar",
+        //         age:16,
+        //         panderi:["Fizika","Beineley","Texnologia"]
+        //       },
+        //     ]
+        //     console.log(synyp);
 
-      let pan = synyp.flatMap(panderi=>panderi.panderi)
-      console.log(pan);
+        //     let pan = synyp.flatMap(panderi=>panderi.panderi)
+        //     console.log(pan);
+            
+        // function jasOqyshy(){
+        //   let min = synyp[0].age
+        //   let jasOqyshyAty=""
+        //   for(let i=1;i<synyp.length;i++){
+        //     if (min>synyp[i].age) {
+        //       min = synyp[i].age
+        //       jasOqyshyAty=synyp[i].name
+        //     }
+        //   }
+          
+        // alert("En jas oqushy: "+ jasOqyshyAty +`\njasy: ` +min)
+        // }
+        // jasOqyshy()
+
+
+//     //Destructuring andSpread/Rest Operators   
+
+//     let oqyshi = {name:"Einshtein", nikname:"Progylshik",age:18}
+//     let {name,nikname,age}= oqyshi;
+//      console.log(nikname);
+//      console.log(age);
+     
+//     // massivpen aly
+//   let oqyshiJastary = [18,22, 24,58,36,26]
+//   // Spread(...)keneitu 
+//   let oqyshiAttarry = ["Aziz","Ezim","Efrat",...oqyshiJastary]
+//   console.log(oqyshiAttarry);
+//   //massivpen oddelno shygary
+//   let [num1,num2,num3,num4,num5]=oqyshiJastary
+//   console.log(num1);
+//   console.log(num2);
+//   console.log(num3);
+
+
+//   //Rest (...) jinaqtay соңындағы қалдықтарды жинап береді.
+//   let arr1 = [1,2,3,4,5]
+// let [a,b,...rested]=arr1
+//  console.log(arr1);
+ 
+  
+                        // //ТАПСЫРМА 1 Объектіні ыдыратып, айнымалылар алыңыз
+                        // const book = {title:"Абай жолы",avtor:"Мұхтар Әуезов",year:"1942"} 
+                        // const {title,avtor,year}=book 
+                        // console.log(title);
+                        // console.log(avtor);
+                        // console.log(year);
+                        
+                        // //2 Тапсырма: Массивтің бірінші элементін және қалған
+                        //     //элементтерді бөлек айнымалыларға сақтаңыз
+                        // const fruits = ["alma","almyrt","shie"]
+                        // const [a,...fff] = fruits
+                        // console.log(...fff);
+                        
+                        // //3 Массивтерді біріктіріңіз
+                        // const arr1 = [1,2,3];
+                        // const arr2 = [4,5,6];
+                        // const jjj = [...arr1,...arr2] 
+                        // console.log(jjj);
+
+                        // //4 Тапсырма: Объектіні көшіріңіз және жаңа қасиет қосыңыз
+                        // const user = {name:"Ali",age:25}
+                        // const info = {...user,hoby:"fudbol"}
+                        // console.log(info);
+                        
+                        // //Тапсырмалаууу
+                        // let person ={
+                        //   name:prompt("Atyndy engiz"),
+                        //   age:+prompt("Jasyndy engiz"),
+                        //   hobby:("Hobbyindy engiz")
+                        // }
+                        // let {name,age,hobby}=person
+                        // if (age<0) {
+                        //   alert (name+" Sen ali planda joqsyn")
+                        // }else if(age>18 && age<100){
+                        //   alert( name+" Ereseksin")
+                        // }else if(age>100){
+                        //   alert(name+" Dinozavr")
+                        // }else {
+                        //   alert(name+" Shigolsun")
+                        // }
+
+                    let people ={ 
+                      oqyshylar:[
+                      {name:"Efrat",age:18,hobby:"sliping"},
+                      {name:"Aisulu",age:35,hobby:"playing"},
+                      {name:"Gulnara",age:37,hobby:"tiktoking"},
+                    ],
+                      adamQosy:function() {
+                        
+                      },
+                      barinKory:function(){
+                        return this.people
+                      }
+                  }
+                      let syrak = prompt("Qandai areket jazasyz?(ozgerty/qosy/barlygyn kory)").toLowerCase()
+
+
+
+
+
+
+
+
+
       
-  function jasOqyshy(){
-    let min = synyp[0].age
-    let jasOqyshyAty=""
-    for(let i=1;i<synyp.length;i++){
-      if (min>synyp[i].age) {
-        min = synyp[i].age
-        jasOqyshyAty=synyp[i].name
-      }
-    }
-    
-  alert("En jas oqushy: "+ jasOqyshyAty +`\njasy: ` +min)
-  }
-  jasOqyshy()

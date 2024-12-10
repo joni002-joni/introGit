@@ -37,9 +37,7 @@ let student=[
             city:"Талгар",
             street:"сентралная",
         },
-    }
-
-]
+    },
 for(let i =0; i<student.length; i++){
     console.log("АТЫ:",student[i].name);
     console.log("МАТЕМАТИКАДАН БАҒАСЫ:",student[i].grades.math);

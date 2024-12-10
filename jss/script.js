@@ -1027,24 +1027,169 @@ jasunEsepteu();
                         //   alert(name+" Shigolsun")
                         // }
 
-                    let people ={ 
-                      oqyshylar:[
-                      {name:"Efrat",age:18,hobby:"sliping"},
-                      {name:"Aisulu",age:35,hobby:"playing"},
-                      {name:"Gulnara",age:37,hobby:"tiktoking"},
-                    ],
-                      adamQosy:function() {
+                  //   let people ={ 
+                  //     oqyshylar:[
+                  //     {name:"Efrat",age:18,hobby:"sliping"},
+                  //     {name:"Aisulu",age:35,hobby:"playing"},
+                  //     {name:"Gulnara",age:37,hobby:"tiktoking"},
+                  //   ],
+                  //     adamQosy:function() {
                         
-                      },
-                      barinKory:function(){
-                        return this.people
-                      }
-                  }
-                      let syrak = prompt("Qandai areket jazasyz?(ozgerty/qosy/barlygyn kory)").toLowerCase()
+                  //     },
+                  //     barinKory:function(){
+                  //       return this.people
+                  //     }
+                  // }
+                  //     let syrak = prompt("Qandai areket jazasyz?(ozgerty/qosy/barlygyn kory)").toLowerCase()
 
+                      // Барлық студенттердің есімдерін шығарыңыз (forEach
+                      //   қолданыңыз).
+                      //   Жас мөлшері 20-дан жоғары студенттерді табыңыз
+                      //   (filter).
+                      //   Студенттердің ұпайларын 10%-ға арттырыңыз (map).
+                      //   Жалпы ұпайды есептеу (reduce пайдаланыңыз)
+                      //   Ең жоғары ұпай алған студентті табу
 
+                      // let  stydentter=[
+                      //   {name:"Efrat",age:18,hobby:"sliping"},
+                      //   {name:"Aisulu",age:35,hobby:"playing"},
+                      //   {name:"Gulnara",age:37,hobby:"tiktoking"},
+                      // ]
 
+                      // let tavarlar = [
+                      //   {
+                      //     name:"aiphone",
+                      //     baga:200000
+                      //   },
+                      //   {
+                      //     name:"noydbook",
+                      //     baga:300000
+                      //   },
+                      //   {
+                      //     name:"nayshniki",
+                      //     baga:10000
+                      //   }
+                      // ]
+                      // let natije = tavarlar.filter(tyri=>tyri.baga>10000)
+                      // console.log(natije);
+                      // console.log(tavarlar.reduce((total,tyri)=>total+tyri.baga,0));
+                      
+                    // //Exzamen #6 
+                    // let eShop = {
+                    //   Name:"Magazin",
+                    //   phoneNumber:+77055584445,
+                    //   products:[
+                    //     {
+                    //       productsName:"cola",
+                    //       category:"susyn",
+                    //       price:500,
+                    //       stok:60,
+                    //     },
+                    //     {
+                    //       productsName:"fanta",
+                    //       category:"susyn",
+                    //       price:500,
+                    //       stok:60,
+                    //     },
+                    //     {
+                    //       productsName:"sprit",
+                    //       category:"susyn",
+                    //       price:500,
+                    //       stok:60,
+                    //     },
+                    //     {
+                    //       productsName:"Iphone 16 pro",
+                    //       category:"tovar",
+                    //       price:450000,
+                    //       stok:20,
+                    //     },
+                    //     {
+                    //       productsName:"toyota 75",
+                    //       category:"mashina",
+                    //       price:11000000,
+                    //       stok:5,
+                    //     },
+                    //   ],
+                    //   changeShopName:function(){
+                    //     let janaAtay = prompt("Jana ataydy engiz");
+                    //     this.name = janaAtay//magazin => jana atay
+                    //   },
 
+                    //   changeShopNamber:function(){
+                    //     let janaNumber=prompt("jana san engiz")
+                    //     if(janaNumber== ""){
+                    //       this.phoneNumber=this.phoneNumber
+                    //     }else{
+                    //       this.phoneNumber=janaNumber //87055584445 => janaNomer
+                    //     }
+                    //   },
+
+                    //   instProductNames:function(){
+                    //     let productlist = []
+                    //     this.products.forEach(function(){
+                    //       productlist.push(element.productsName)
+                    //     })
+                    //     productlist=productlist.join(`\n`)
+                    //     alertp(productlist)
+                    //   },
+
+                    //   addpprodyct:function(){
+                    //     let onimName = prompt("Onim atyn engiz")
+                    //     let sanatName = prompt("Onim categoriacyn engiz")
+                    //     let baga = +prompt("Onim bagasyun eengiz")
+                    //     let stockSany = +prompt("Onim sanun engiz")
+                    //     this.products.push({productsName:onimName,category:sanatName,price:baga,stok:stockSany})
+                    //   },
+
+                    //   addlyDiscountToCategory:function(){
+                    //     let categoryAtyn = prompt("Jenildicce category atyn tanda").toLowerCase()
+                    //     let jenildik = +prompt("Qansha % jenildik kerek(0-100)")
+                    //     for(let i=0;i<this.products.length;i++){
+                    //       if(this.products[i].category.toLowerCase()==categoryAtyn){
+                    //         this.products[i].price=this.products[i].price-((this.products[i].price*jenildik)/100)
+                    //       }
+                    //     }
+                    //   }
+                       
+                    // }  
+                    //   //tapsrma2
+                    //   eShop.changeShopName()
+                    //   console.log(eShop);
+                    //   //tapsrma3
+                    //   eShop.changeShopNamber()
+                    //   console.log(eShop);
+                    //   //tapsrma4
+                    //   eShop.instProductNames()
+                    //   console.log(eShop);
+                      
+                    //   //tapsrma5
+                    //   eShop.addpprodyct()
+                    //   console.log(eShop);
+                      
+                    //   //tapsrma6
+                    //   eShop.addlyDiscountToCategory()
+                    //   console.log(eShop.products);
+                    
+
+                      
+                    
+//let taqrup = document.getElementById(`title`)
+// let textter = document.getElementsByClassName(`text`)
+// console.log(textter[0].textContent);
+
+let taqrupp = document.getElementById(`news-title`)
+console.log(taqrupp.textContent);
+
+taqrupp.textContent = `JavaScript жаңартулары`
+console.log(taqrupp.textContent);
+
+let Mazmun = document.getElementById(`news-content`)
+Mazmun.textContent = `"JavaScript бағдарламалау әлеміндегі ең соңғы жаңалықтарды
+оқыңыз."`
+console.log(Mazmun.textContent );
+//silteme austry
+let silteme = Document.queryselector(`#news-link`)
+silteme.href = "https://classroom.google.com/u/0/c/NzEyMjQxNTcyODQ4/a/NzQwNTU0Mjg2MzIy/details"
 
 
 

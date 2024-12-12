@@ -1172,27 +1172,103 @@ jasunEsepteu();
                     
 
                       
-                    
+      // DOM               
 //let taqrup = document.getElementById(`title`)
 // let textter = document.getElementsByClassName(`text`)
 // console.log(textter[0].textContent);
 
-let taqrupp = document.getElementById(`news-title`)
-console.log(taqrupp.textContent);
+// let taqrupp = document.getElementById(`news-title`)
+// console.log(taqrupp.textContent);
 
-taqrupp.textContent = `JavaScript жаңартулары`
-console.log(taqrupp.textContent);
+// taqrupp.textContent = `JavaScript жаңартулары`
+// console.log(taqrupp.textContent);
 
-let Mazmun = document.getElementById(`news-content`)
-Mazmun.textContent = `"JavaScript бағдарламалау әлеміндегі ең соңғы жаңалықтарды
-оқыңыз."`
-console.log(Mazmun.textContent );
-//silteme austry
-let silteme = Document.queryselector(`#news-link`)
-silteme.href = "https://classroom.google.com/u/0/c/NzEyMjQxNTcyODQ4/a/NzQwNTU0Mjg2MzIy/details"
-
-
+// let Mazmun = document.getElementById(`news-content`)
+// Mazmun.textContent = `"JavaScript бағдарламалау әлеміндегі ең соңғы жаңалықтарды
+// оқыңыз."`
+// console.log(Mazmun.textContent );
+// //silteme austry
+// let silteme = Document.queryselector(`#news-link`)
+// silteme.href = "https://classroom.google.com/u/0/c/NzEyMjQxNTcyODQ4/a/NzQwNTU0Mjg2MzIy/details"
 
 
+//Mouse Events
+function buttonClick(){
+  alert("meni bastyn")
+} //basqan kezde
 
-      
+ //(click)Tizimge click ornaty
+ let taqryp = document.getElementById(`title`)
+    // taqryp.addEventListener("click",function(){
+    //   // alert("taqrupty bastyn")
+    // taqryp.style.fontSize=`20px`;
+    // taqryp.style.borderRadius = "50px";
+    // taqryp.style.border = "2px solid red";
+    // })
+
+//  taqryp.addEventListener("dblclick",function(){
+//   // alert("taqrupty bastyn")
+// taqryp.style.fontSize=`20px`;
+// taqryp.style.borderRadius = "50px";
+// taqryp.style.border = "2px solid red";
+// })
+
+// let qorap = document.querySelector(`.box`)
+// //mouse элеменке барган кезде
+//       qorap.addEventListener("mouseenter",function(){
+//          qorap.style.backgroundColor = "red";
+//          qorap.style.transitionDuration = "1s";
+//          qorap.style.borderRadius = '50%';
+//       })
+
+//      //элементтен алган кезде
+//       qorap.addEventListener("mouseleave",function(){
+//          qorap.style.backgroundColor = "cadetblue";
+//          qorap.style.transitionDuration = "1s";
+//          qorap.style.borderRadius = '30px';
+//       })
+ 
+
+function divclick(){
+ alert("Түйме басылды!")
+}
+
+let div = document.getElementById(`divv`)
+div.addEventListener("mouseenter",function(){
+  div.style.backgroundColor="blue"
+})
+div.addEventListener("mouseleave",function(){
+  div.style.backgroundColor="white"
+})
+  //ul /li жеке жеке орнату
+  let li = document.getElementById(`li`)
+    li.addEventListener("click",function(){
+      li.style.color = 'red'
+    })
+    li.addEventListener("mouseleave",function(){
+      li.style.color = 'black'
+    })
+
+  let ol = document.getElementById('ol')
+  ol.addEventListener("click",function(){
+    ol.style.color = "red"
+  })
+  ol.addEventListener("mouseleave",function(){
+    ol.style.color = "black"
+  })
+
+  let ul = document.getElementById('ul')
+  ul.addEventListener("click",function(){
+    ul.style.color = "red"
+  })
+  ul.addEventListener("mouseleave",function(){
+    ul.style.color = "black"
+  })
+//Сан қосу баскан сайын.
+  let sandar = document.getElementById("san")
+let qosylu = document.getElementById("qosu")
+
+qosylu.addEventListener("click",() =>{
+    let sanQosu = parseInt(sandar.textContent)
+   sandar.textContent = sanQosu+1
+})
